@@ -1,0 +1,14 @@
+[project]
+name = "agentic-intent-system"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.11.0",
+    "datasets==2.19.2",
+    "modelscope>=1.33.0",
+    "numpy==1.26.4",
+    "pyarrow==16.1.0",
+    "torch==2.1.2",
+    "transformers==4.44.2",
+]

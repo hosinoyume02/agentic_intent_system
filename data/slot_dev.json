@@ -1,0 +1,18 @@
+[
+  {
+    "tokens": ["帮我", "把", "空调", "设定到", "20", "度"],
+    "labels": ["O", "O", "B-facility", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["打开", "空调", "调到", "20", "度"],
+    "labels": ["O", "B-facility", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["导航到", "加油站"],
+    "labels": ["O", "B-destination"]
+  },
+  {
+    "tokens": ["启动", "自动泊车"],
+    "labels": ["O", "B-function"]
+  }
+]

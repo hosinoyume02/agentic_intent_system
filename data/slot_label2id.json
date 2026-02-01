@@ -1,0 +1,11 @@
+{
+  "O": 0,
+  "B-facility": 1,
+  "I-facility": 2,
+  "B-temperature": 3,
+  "I-temperature": 4,
+  "B-function": 5,
+  "I-function": 6,
+  "B-destination": 7,
+  "I-destination": 8
+}

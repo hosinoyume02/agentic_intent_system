@@ -1,0 +1,50 @@
+[
+  {
+    "tokens": ["打开", "空调", "到", "22", "度"],
+    "labels": ["O", "B-facility", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["打开", "空调", "调到", "20", "度"],
+    "labels": ["O", "B-facility", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["我要", "去", "加油站"],
+    "labels": ["O", "O", "B-destination"]
+  },
+  {
+    "tokens": ["自动泊车", "怎么用"],
+    "labels": ["B-function", "O", "O"]
+  },
+  {
+    "tokens": ["温度", "调到", "25", "度"],
+    "labels": ["O", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["关闭", "空调"],
+    "labels": ["O", "B-facility"]
+  },
+  {
+    "tokens": ["调整", "空调", "温度", "到", "18", "度"],
+    "labels": ["O", "B-facility", "O", "O", "B-temperature", "I-temperature"]
+  },
+  {
+    "tokens": ["导航", "到", "最近", "加油站"],
+    "labels": ["O", "O", "O", "B-destination"]
+  },
+  {
+    "tokens": ["我要", "导航", "去", "北京", "市", "朝阳区"],
+    "labels": ["O", "O", "O", "B-destination", "I-destination", "I-destination"]
+  },
+  {
+    "tokens": ["开启", "自动泊车", "功能"],
+    "labels": ["O", "B-function", "I-function"]
+  },
+  {
+    "tokens": ["关闭", "自动泊车", "模式"],
+    "labels": ["O", "B-function", "I-function"]
+  },
+  {
+    "tokens": ["把", "空调", "调到", "23", "度"],
+    "labels": ["O", "B-facility", "O", "B-temperature", "I-temperature"]
+  }
+]

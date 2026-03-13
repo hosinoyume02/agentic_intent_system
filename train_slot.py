@@ -11,7 +11,7 @@ EPOCHS = 100                             # 训练轮数
 LEARNING_RATE = 3e-5                    # 学习率
 OUTPUT_DIR = "./outputs/slot_filling/"  # 模型输出路径
 CHECKPOINT_DIR = "./outputs/slot_filling/checkpoint-92" # 继续训练的断点保存目录
-MODEL_PATH ="./model/bert-base-chinese" #你自己的model的path
+MODEL_PATH ="./output/checkpoint-200" #你自己的model的path
 
 # ========== 加载标签映射 ==========
 with open("data/slot_label2id.json", "r", encoding="utf-8") as f:
@@ -72,7 +72,7 @@ if os.path.exists(CHECKPOINT_DIR) and os.path.isdir(CHECKPOINT_DIR):
 else:
     print("未检测到checkpoint，将从预训练模型全新训练 ...")
     model = BertForTokenClassification.from_pretrained(
-        MODEL_NAME, num_labels=NUM_LABELS, id2label=id2label, label2id=label2id
+        MODEL_PATH, num_labels=NUM_LABELS, id2label=id2label, label2id=label2id,ignore_mismatched_sizes=True
     )
     resume_from_checkpoint = None
 
